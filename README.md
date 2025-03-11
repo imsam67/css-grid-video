@@ -2,7 +2,7 @@
 
 I'm trying to use CSS grid to create a responsive layout that splits the screen into two columns i.e. two thirds (left) and one third (right).
 
-The left column -- taking up 2/3 of screen -- should have an embedded YouTube video that takes up all the available space in that column i.e. scaling up and down nicely.
+The left column -- taking up 2/3 of screen -- should have an embedded YouTube video that takes up all the available space -- except padding -- in that column and scale up and down nicely.
 
 The right column will have the company logo as well as some message.
 
