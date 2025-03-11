@@ -1,0 +1,50 @@
+@use '../abstracts/colors' as *;
+
+$avatar-width: 40px;
+$avatar-height: 40px;
+$avatar-lg-width: 100px;
+$avatar-lg-height: 100px;
+
+.avatar {
+   display: flex;
+   background-color: $gray-dark;
+   width: $avatar-width;
+   height: $avatar-height;
+   border-width: 2px;
+   border-color: $gray-dark;
+   border-style: solid;
+   border-radius: 50%;
+   overflow: hidden;
+   justify-content: center;
+   margin-right: 4rem;
+
+   img: {
+      width: 100%;
+   }
+}
+
+// .avatar {
+//    display: inline-block;
+//    vertical-align: middle;
+//    position: relative;
+//    overflow: hidden;
+//    background-color: $gray-dark;
+   
+//    &.avatar-sm {
+//       width: $avatar-sm-width;
+//       height: $avatar-sm-height;
+//    }
+   
+//    &.avatar-lg {
+//       width: $avatar-lg-width;
+//       height: $avatar-lg-height;
+//    }
+   
+//    &.avatar-circle {
+//       border-radius: 50%;
+//    }
+   
+//    &.avatar-square {
+//       border-radius: 2px;
+//    }
+// }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Responsive Grid</title>
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div id="app" class="my-container">
+      <header class="my-header">
+         <div class="hamburger-menu">
+            &nbsp;
+         </div>
+         <div class="user-info">
+            <div class="dropdown">
+               <div class="avatar">
+                  <img src="/images/avatar.png" alt="Mr. Avatar" />
+               </div>
+               <div class="dropdown-content">
+                  <a href="#">Profile</a>
+                  <a href="#">Settings</a>
+                  <a href="#">Logout</a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main-section">
+         <div class="grid-two-thirds">
+            <div class="videos-section">
+
+               <!-- YouTube Video IFrame -->
+               <iframe width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/u31qwQUeGuM"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen>
+               </iframe>
+
+            </div>
+            <div class="message-section">
+               <div>
+                  <img src="/images/logo.png" class="responsive-img" alt="Acme Logo" />
+               </div>
+               <div>
+                  <h1>Lorem Ipsum!</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                     ultricies, nunc et posuere ultricies, nunc et posuere.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="my-footer">
+         <span>&copy; 2025 Acme, Inc.</span>
+      </footer>
+   </div>
+</body>
+</html>

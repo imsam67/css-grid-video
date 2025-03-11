@@ -1,0 +1,150 @@
+.avatar {
+  display: flex;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  border-width: 2px;
+  border-color: #333;
+  border-style: solid;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  margin-right: 4rem;
+  img-width: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-width: 0;
+  border-radius: 0.4rem;
+  background-color: #421C27;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 1rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #FFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #1E201E;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.my-container {
+  background-color: #31322B;
+  color: #FFF;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.my-header {
+  display: grid;
+  grid-area: header;
+  top: 0;
+  position: sticky;
+  background-color: #171111;
+  opacity: 0.9;
+  color: #FFF;
+  padding: 0;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header-left header-right";
+}
+
+.user-info {
+  grid: header-right;
+  display: grid;
+  justify-content: end;
+}
+
+.my-footer {
+  display: flex;
+  grid-area: footer;
+  background-color: #1E201E;
+  opacity: 0.75;
+  color: #FFF;
+  padding: 1.25rem;
+  font-size: 0.6rem;
+  justify-content: end;
+}
+
+.main-section {
+  grid-area: main;
+  padding: 1.25rem;
+}
+
+.grid-two-thirds {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1.5rem;
+  grid-template-areas: "col-two-thirds-left col-two-thirds-right";
+  transition: grid-template-columns 0.3s ease;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .grid-two-thirds {
+    grid-template-columns: 1fr;
+    grid-template-areas: "col-two-thirds-left" "col-two-thirds-right";
+  }
+}
+.videos-section {
+  display: grid;
+  grid: col-two-thirds-left;
+  width: 100%;
+  justify-content: center;
+}
+
+.message-section {
+  display: grid;
+  grid: col-two-thirds-right;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.responsive-img {
+  max-width: 200px;
+  height: auto;
+}/*# sourceMappingURL=styles.css.map */

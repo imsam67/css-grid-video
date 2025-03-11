@@ -1,0 +1,92 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.my-container {
+   background-color: $primary-surface-color;
+   color: $white;
+   min-block-size: 100vh;
+   min-block-size: 100dvh;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 4rem 1fr auto;
+   grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+}
+
+.my-header {
+   display: grid;
+   grid-area: header;
+   top: 0;
+   position: sticky;
+   background-color: $black-almost;
+   opacity: 0.9;
+   color: $white;
+   padding: 0;
+   align-items: center;
+
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:
+      "header-left header-right";
+}
+
+.user-info {
+   grid: header-right;
+   display: grid;
+   justify-content: end;
+}
+
+.my-footer {
+   display: flex;
+   grid-area: footer;
+   background-color: $secondary-surface-color;
+   opacity: 0.75;
+   color: $white;
+   padding: 1.25rem;
+   font-size: 0.6rem;
+   justify-content: end;
+}
+
+.main-section {
+   grid-area: main;
+   padding: 1.25rem;
+}
+
+.grid-two-thirds {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-gap: 1.5rem;
+   grid-template-areas: "col-two-thirds-left col-two-thirds-right";
+   transition: grid-template-columns 0.3s ease;
+   margin: auto;
+}
+
+@media (max-width: 768px) {
+   .grid-two-thirds {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+         "col-two-thirds-left"
+         "col-two-thirds-right";
+   }
+}
+
+.videos-section {
+   display: grid;
+   grid: col-two-thirds-left;
+   width: 100%;
+   justify-content: center;
+}
+
+.message-section {
+   display: grid;
+   grid: col-two-thirds-right;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.responsive-img {
+   max-width: 200px;;
+   height: auto;
+ }
